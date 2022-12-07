@@ -54,7 +54,7 @@ const ItemPreview = (props) => {
               className="user-pic rounded-circle pr-1"
             />
             <span style={{ color: "white" }}>
-              👽 TOP SELLER
+              {item.seller.isVerified ? '👽 TOP SELLER' : ''}
             </span>
           </Link>
           <button className="btn btn-outline-secondary" onClick={handleClick}>
