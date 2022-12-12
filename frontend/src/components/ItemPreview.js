@@ -53,6 +53,9 @@ const ItemPreview = (props) => {
               alt={item.seller.username}
               className="user-pic rounded-circle pr-1"
             />
+            <span style={{ color: "white" }}>
+              {item.seller.isVerified ? "👽 TOP SELLER" : ""}
+            </span>
           </Link>
           <button className="btn btn-outline-secondary" onClick={handleClick}>
             <i className="ion-heart"></i> {item.favoritesCount}
