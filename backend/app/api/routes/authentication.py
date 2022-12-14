@@ -50,6 +50,7 @@ async def login(
             bio=user.bio,
             image=user.image,
             token=token,
+            is_verified=user.is_verified
         ),
     )
 
@@ -91,6 +92,7 @@ async def register(
             username=user.username,
             email=user.email,
             bio=user.bio,
+            is_verified=user.is_verified,
             image=user.image,
             token=token,
         ),
