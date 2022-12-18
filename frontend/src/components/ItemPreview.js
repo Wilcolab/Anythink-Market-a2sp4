@@ -54,7 +54,7 @@ const ItemPreview = (props) => {
               className="user-pic rounded-circle pr-1"
             />
             <span style={{ color: "white" }}>
-              {item.seller.isVerified2 ?
+              {item.seller.isVerified ?
                 <span style={{ paddingLeft: "8px" }}>
                   <img width="30px" src="verified_seller.svg"/> TOP SELLER
                 </span> : null}
