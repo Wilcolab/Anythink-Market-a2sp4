@@ -24,7 +24,7 @@ var UserSchema = new mongoose.Schema(
     },
     bio: String,
     image: String,
-    isVerified2: {
+    isVerified: {
       type: Boolean,
       default: false
     },
