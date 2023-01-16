@@ -7,11 +7,12 @@ jobs:
     steps:
       - checkout
       - run:
-          working-directory: frontend
+          name: Cd
+          command: cd frontend
+      - run:
           name: Install deps
           command: yarn install
       - run:
-          working-directory: frontend
           name: Run tests
           command: yarn test
 
