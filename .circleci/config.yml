@@ -2,12 +2,12 @@ version: 2.1
 
 jobs:
   build-and-test:
-    working_directory: $CIRCLE_WORKING_DIRECTORY/frontend
+    working_directory: ~/Anythink-Market-a2sp4/frontend
     docker:
       - image: cimg/node:16.18
     steps:
       - checkout:
-          path: $CIRCLE_WORKING_DIRECTORY
+          path: ~/Anythink-Market-a2sp4
       - run:
           name: Install deps
           command: yarn install
