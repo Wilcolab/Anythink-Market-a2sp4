@@ -6,7 +6,8 @@ jobs:
     docker:
       - image: cimg/node:16.18
     steps:
-      - checkout
+      - checkout:
+          path: $CIRCLE_WORKING_DIRECTORY
       - run:
           name: Install deps
           command: yarn install
