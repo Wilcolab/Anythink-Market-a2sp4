@@ -1,9 +1,9 @@
 version: 2.1
-
+orbs:
+  node: circleci/node@16.0
 jobs:
   build-and-test:
-    orbs:
-      node: circleci/node@16.0
+    
     working_directory: ~/market/frontend
     executor: node/default
     steps:
