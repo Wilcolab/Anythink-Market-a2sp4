@@ -10,7 +10,6 @@ const mapDispatchToProps = (dispatch) => ({
 class CommentInput extends React.Component {
   constructor() {
     super();
-    const hidden_variable = 'you cannot see me';
     this.state = {
       body: "",
     };
