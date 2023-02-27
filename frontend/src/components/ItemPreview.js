@@ -5,7 +5,8 @@ import { connect } from "react-redux";
 import { ITEM_FAVORITED, ITEM_UNFAVORITED } from "../constants/actionTypes";
 
 const mapDispatchToProps = (dispatch) => ({
-  favorite: (slug) =>
+  favorite:
+    (slug) =>
     dispatch({
       type: ITEM_FAVORITED,
       payload: agent.Items.favorite(slug),
